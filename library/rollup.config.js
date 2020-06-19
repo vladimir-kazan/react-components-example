@@ -4,6 +4,7 @@ import typescript from 'rollup-plugin-typescript2';
 import commonjs from '@rollup/plugin-commonjs';
 import postcss from 'rollup-plugin-postcss';
 import copy from 'rollup-plugin-copy';
+import visualize from 'rollup-plugin-visualizer';
 
 import packageJson from './package.json';
 
@@ -40,6 +41,7 @@ export default {
         },
       ],
     }),
+    visualize(),
   ],
   external: ['react', 'react-dom'],
 };

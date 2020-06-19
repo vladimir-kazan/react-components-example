@@ -59,5 +59,8 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
+  },
+  "dependencies": {
+    "rollup-plugin-visualizer": "4.0.4"
   }
 }

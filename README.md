@@ -3,7 +3,7 @@
 ## Rollup
 
 ```sh
-npm install --save-dev rollup rollup-plugin-peer-deps-external @rollup/plugin-node-resolve rollup-plugin-typescript2 @rollup/plugin-commonjs rollup-plugin-postcss rollup-plugin-copy node-sass typescript
+npm install --save-dev rollup rollup-plugin-peer-deps-external @rollup/plugin-node-resolve rollup-plugin-typescript2 @rollup/plugin-commonjs rollup-plugin-postcss rollup-plugin-copy rollup-plugin-visualizer node-sass typescript
 ```
 
 `roolup.config.js`
@@ -15,6 +15,7 @@ import typescript from 'rollup-plugin-typescript2';
 import commonjs from '@rollup/plugin-commonjs';
 import postcss from 'rollup-plugin-postcss';
 import copy from 'rollup-plugin-copy';
+import visualize from 'rollup-plugin-visualizer';
 
 import packageJson from './package.json';
 
@@ -51,6 +52,7 @@ export default {
         },
       ],
     }),
+    visualize({ gzipSize: true }),
   ],
   external: ['react', 'react-dom'],
 };
