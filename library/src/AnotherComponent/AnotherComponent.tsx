@@ -7,7 +7,7 @@ interface Props {
 
 export const AnotherComponent: React.FC<Props> = ({ title = 'Hello world!' }) => {
   return (
-    <h1 data-testid="demo-component" className={styles.myClass}>
+    <h1 data-testid="another-component" className={styles.myClass}>
       You set title to: {title}
     </h1>
   );
