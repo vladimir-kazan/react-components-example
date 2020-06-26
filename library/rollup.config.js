@@ -3,7 +3,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import typescript from 'rollup-plugin-typescript2';
 import commonjs from '@rollup/plugin-commonjs';
 import postcss from 'rollup-plugin-postcss';
-import replace from 'rollup-plugin-re'
+import replace from 'rollup-plugin-re';
 import copy from 'rollup-plugin-copy';
 import visualize from 'rollup-plugin-visualizer';
 import bundleSize from 'rollup-plugin-bundle-size';
@@ -15,7 +15,7 @@ const replacePatterns = [
     include: ['src/**/*.tsx'],
     test: /\sdata-testid=[^\s|>|\/>]+/g,
     replace: '',
-  }
+  },
 ];
 
 export default {

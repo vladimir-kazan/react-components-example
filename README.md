@@ -1,5 +1,18 @@
 # Build Component Library for React
 
+## Pre-commit hook
+
+https://pre-commit.com/#installation
+
+```sh
+brew install pre-commit
+# pip install pre-commit
+
+pre-commit install
+# optional
+pre-commit run --all-files
+```
+
 ## Rollup
 
 ```sh
